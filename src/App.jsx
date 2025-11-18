@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import Solutions from './components/Solutions'
+import Work from './components/Work'
 import CTA from './components/CTA'
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Solutions />
+      <Work />
 
       {/* Trusted by strip */}
       <section className="py-10 border-y border-black/5 bg-white">
@@ -25,14 +29,14 @@ function App() {
       <CTA />
 
       {/* Footer */}
-      <footer className="bg-black text-white">
+      <footer id="contact" className="bg-black text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row gap-6 items-center justify-between">
           <p className="font-bold">Axiom Automations</p>
           <p className="text-white/60 text-sm">© {new Date().getFullYear()} All rights reserved.</p>
           <div className="flex items-center gap-4 text-sm">
             <a href="#" className="text-white/70 hover:text-white">Privacy</a>
             <a href="#" className="text-white/70 hover:text-white">Terms</a>
-            <a href="#" className="inline-flex items-center rounded-full bg-red-600 text-white px-4 py-2 hover:bg-red-700 transition-colors">Get a demo</a>
+            <a href="#cta" className="inline-flex items-center rounded-full bg-red-600 text-white px-4 py-2 hover:bg-red-700 transition-colors">Get a demo</a>
           </div>
         </div>
       </footer>
